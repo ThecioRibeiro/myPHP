@@ -4,13 +4,14 @@
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
+<!--http://localhost/myPHP/views/admin/index.php-->
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <?php require_once("core/css.php");?>
+  <?php require_once("dist/css/css.php");?>
 
   <title>My PHP | Home</title>
 
@@ -18,14 +19,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
-  <!-- Navbar -->
   <?php require_once("layout/navbar.php");?>
-  <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
   <?php require_once("layout/mainSidebar.php");?>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -110,19 +107,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
   <?php require_once("layout/controlSidebar.php");?>
-  <!-- /.control-sidebar -->
 
-  <!-- Main Footer -->
   <?php require_once("layout/footer.php");?>
 </div>
-<!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
-<?php require_once("core/javascript.php");?>
+<?php require_once("dist/js/javascript.php");?>
 
 </body>
 </html>
