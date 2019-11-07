@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="fornecedor.php" class="nav-link active">
+                <a href="fornecedor.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fornecedores</p>
                 </a>
