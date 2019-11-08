@@ -4,17 +4,23 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <!--http://localhost/myPHP/views/admin/"nome do arquivo".php-->
+
+
+
+
+
+
+
+
+
 <html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <?php require_once("dist/css/css.php");?>
-
     <title>My PHP | Home</title>
-
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -51,11 +57,97 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>teste</h5>
+                                    <h5>Dados do fornecedor</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form>
-                                        
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Estabelecimento</label>
+                                                    <div class="form-check">
+                                                        <input id="pf" class="form-check-input" type="radio"
+                                                            name="radio1">
+                                                        <label for="pf" class="form-check-label">Pessoa física</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input id="pj" class="form-check-input" type="radio"
+                                                            name="radio1">
+                                                        <label for="pj" class="form-check-label">Pessoa jurídica</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" id="divTipoDocumento">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" id="divRazaoSocial">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" id="divNomeFantasia">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" id="divInscricaoEstadual">
+                                                <div class="form-group">
+                                                    <label></label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2" id="">
+                                                <div class="form-group">
+                                                    <label for="cep">CEP</label>
+                                                    <input id="cep" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" id="">
+                                                <div class="form-group">
+                                                    <label for="rua">Logradouro</label>
+                                                    <input id="rua" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" id="">
+                                                <div class="form-group">
+                                                    <label for="numero">Número</label>
+                                                    <input id="numero" type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3" id="">
+                                                <div class="form-group">
+                                                    <label for="bairro">Bairro</label>
+                                                    <input id="bairro" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" id="">
+                                                <div class="form-group">
+                                                    <label for="cidade">Cidade</label>
+                                                    <input id="cidade" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" id="">
+                                                <div class="form-group">
+                                                    <label for="uf">UF</label>
+                                                    <input id="uf" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" id="">
+                                                <div class="form-group">
+                                                    <label for="ibge">IBGE</label>
+                                                    <input id="ibge" type="text" class="form-control">
+                                                </div>
+                                            </div>                                       
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="card-footer">
@@ -77,7 +169,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
 
     <!-- REQUIRED SCRIPTS -->
-    <?php require_once("dist/javascript.php");?>
+    <?php require_once("dist/js/javascript.php");?>
+    <script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
+    <script src="dist/js/viacep.js"></script>
 
 </body>
 
