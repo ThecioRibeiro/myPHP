@@ -22,6 +22,7 @@ $(function () {
                 $('#divTipoDocumento label').text('CPF');
                 $('#divTipoDocumento label').prop('for', 'cpf');
                 $('#divTipoDocumento input').prop('name', 'cpf');
+                $('#divTipoDocumento input').mask('000.000.000-00');
                 $('#divTipoDocumento label').prop('id', 'cpf');
                 tipoDocumento.show();
 
@@ -38,6 +39,7 @@ $(function () {
                 $('#divTipoDocumento label').text('CNPJ');   
                 $('#divTipoDocumento input').prop('name', 'cnpj');
                 $('#divTipoDocumento input').prop('id', 'cnpj');
+                $('#divTipoDocumento input').mask('00.000.000/0000-00');
                 tipoDocumento.show();
 
                 $('#divRazaoSocial label').text('Razao Social');
